@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.card-orange {
+    background-color: hsl(31, 77%, 52%);
+    width: 320px;
+    height: 510px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+
+    padding: 50px;
+}
+
+.card-blue {
+    background-color:hsl(184, 100%, 22%) ;
+    width: 320px;
+    height: 510px;
+
+    padding: 50px;
+}
+
+.card-green {
+    background-color:hsl(179, 100%, 13%) ;
+    width: 320px;
+    height: 510px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+
+    padding: 50px;
+}
+
+.title {
+    color:hsl(0, 0%, 95%) ;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    padding: 30px 0px;
+}
+
+.text {
+    color:hsla(0, 0%, 100%, 0.75) ;
+    font-size: 15px ;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.8;
+}
+
+button {
+    margin-top: 75px;
+    background-color: hsl(0, 0%, 95%) ;
+    height: 45PX;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%) ;
+    color:hsl(0, 0%, 95%)  ;
+}
+
+.button-orange  {
+    color:hsl(31, 77%, 52%); ;
+}
+
+.button-blue {
+    color: hsl(184, 100%, 22%) ;
+}
+
+.button-green {
+    color: hsl(179, 100%, 13%) ;
+}
+
+@media (max-width:957px) {
+    main {
+        height: 140vh;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-orange{
+        width: 320px;
+        height: 375px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        padding: 30px;
+    }
+    .card-green {
+        width: 320px;
+        height: 375px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius:10px ;
+        border-top-right-radius: 0px;
+        padding: 30px;
+        
+    }
+    .card-blue{
+        width: 320px;
+        height: 375px;
+        padding: 30px;
+    }
+    .title{
+        padding: 10px 0px;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:375px) {
+    main {
+        height: 180vh;
+    }
+}
+
+
